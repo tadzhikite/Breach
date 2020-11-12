@@ -6,8 +6,8 @@ pkgdesc="test package"
 arch=(x86_64)
 url="https://github.com/tadzhikite/breach"
 license=('GPL')
-depends=(glm)
-makedepends=(git make)
+depends=()
+makedepends=(git make glm)
 source=("git://github.com/tadzhikite/breach") 
 md5sums=('SKIP')
 
