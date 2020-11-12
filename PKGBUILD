@@ -12,6 +12,6 @@ source=("git://github.com/tadzhikite/breach")
 md5sums=('SKIP')
 
 package() {
-	cd $pkgname
-	make DESTDIR="$pkgdir/" install
+	cd $srcdir/$pkgname
+	make PREFIX=/usr DESTDIR="$pkgdir/" install
 }
