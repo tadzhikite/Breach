@@ -8,15 +8,10 @@ url="https://github.com/tadzhikite/breach"
 license=('GPL')
 depends=(glm)
 makedepends=(git make)
-source=("$url") 
+source=("git://github.com/tadzhikite/breach") 
 md5sums=('SKIP')
 
-build() {
-	# cd "$pkgname-$pkgver"
-	make
-}
-
 package() {
-	cd "$pkgname-$pkgver"
+	cd $pkgname
 	make DESTDIR="$pkgdir/" install
 }
